@@ -201,8 +201,8 @@ set(gca,'Color',[0.81 1 0.99]); %background mapy
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %wyliczam korelacje pomiedzy srednim wiekiem a liczba zgonow (x - sredni
-%wiek, y = liczba zgonow)
-korTable = readtable('korelacja.xlsx'); %wczytuje dane (countrym average age, total deaths)
+%wiek, y - liczba zgonow)
+korTable = readtable('korelacja.xlsx'); %wczytuje dane (country, average age, total deaths)
 averageAge=str2double(korTable.average_age); %konwertuje string do double(nie wiem dla czego excel zapisal liczby jako string:( )
 %zmienne pomocnicze potrzebne dla korelacji Pearsona
 xy = 0;

@@ -28,7 +28,7 @@ wykres1 = figure;
 bar(xtemp,'FaceColor',[0.4940 0.1840 0.5560],'EdgeColor',[0.9290 0.6940 0.1250],'LineWidth',1.5);
 ylabel("Zakażeń na 1M", "FontSize", 12, "Color", 'k'); %podpisuje os Y
 xlabel("Panstwa","FontSize", 12, "Color", 'k');%podpisuje os X
-title("Top 15 Swaita z najmniejszym wskaznikiem zakazen na 1M mieszkancow", "FontSize", 12, "Color", 'k'); %ustawiam tytul wykresu
+title("Top 15 Swiata z najmniejszym wskaznikiem zakazen na 1M mieszkancow", "FontSize", 12, "Color", 'k'); %ustawiam tytul wykresu
 set(gca, 'XTick', 1:15, 'XTickLabel', ytemp,'XTickLabelRotation',90, 'Color', [0.6 0.93 1]); %ustawiam punkty na osi X oraz backgroud kolor
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -42,7 +42,7 @@ wykres2 = figure;
 bar(xtemp,'FaceColor',[0.4940 0.1840 0.5560],'EdgeColor',[0.9290 0.6940 0.1250],'LineWidth',1.5);
 ylabel("Zakazen na 1M", "FontSize", 12, "Color", 'k');
 xlabel("Panstwa","FontSize", 12, "Color", 'k');
-title("Top 15 Swaita z najwiekszym wskaznikiem zakazen na 1M mieszkancow", "FontSize", 12, "Color", 'k');
+title("Top 15 Swiata z najwiekszym wskaznikiem zakazen na 1M mieszkancow", "FontSize", 12, "Color", 'k');
 set(gca, 'XTick', 1:15, 'XTickLabel', ytemp,'XTickLabelRotation',90, 'Color', [0.6 0.93 1]);
 
 
@@ -137,7 +137,7 @@ for i=1:length(continents.num)
     continentsfor1m(i) = continents.total_cases(i)/(continents.population(i)/1000000); %wyliczam wskaznik zakazen na
     %1M mieszkancow dla kazdego kontynentu
 end
-gb = geobubble(lat,lon,continentsfor1m,'Title', 'Liczba zakazen na kontynentach swiatu na 1M mieszkancow','SizeLegendTitle', 'Zakazen na 1M', ...
+gb = geobubble(lat,lon,continentsfor1m,'Title', 'Liczba zakazen na kontynentach swiata na 1M mieszkancow','SizeLegendTitle', 'Zakazen na 1M', ...
     'BubbleColorList', [1, 0, 0]); %rysuje wykres za pomoca geobubble
 geobasemap colorterrain; %wczytuje bazowa mape
 geolimits(gb,[-90 90],[-180 180]);
